@@ -1,11 +1,30 @@
 {
-  "name": "newproject",
+  "name": "eslintlearn",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
-  "author": "",
-  "license": "ISC"
+  "author": "1",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnu-ramesh/learn.git"
+  },
+  "keywords": [
+    "npm",
+    "run",
+    "lint"
+  ],
+  "bugs": {
+    "url": "https://github.com/vishnu-ramesh/learn/issues"
+  },
+  "homepage": "https://github.com/vishnu-ramesh/learn#readme",
+  "description": "",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.17.0"
+  }
 }
