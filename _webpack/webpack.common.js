@@ -8,7 +8,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../_dist'),
     filename: '[name].bundle.js',
-    publicPath: '/',
   },
   module: {
     rules: [
@@ -24,7 +23,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'My Website',
-      template: path.resolve(__dirname, '../templates/client.html'),
+      template: path.resolve(__dirname, '../_templates/client.html'),
     }),
   ],
 };

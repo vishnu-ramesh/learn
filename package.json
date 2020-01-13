@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build:client:dev": "webpack --config=_webpack/webpack.config.js --env=dev",
+    "build:client:prod": "webpack --config=_webpack/webpack.config.js --env=prod",
+    "build:client:devserver": "webpack-dev-server --config=_webpack/webpack.config.js --env=dev"
   },
   "author": "1",
   "license": "ISC",
@@ -36,9 +39,11 @@
     "babel-plugin-istanbul": "^6.0.0",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.17.0",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^3.1.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2"
   },
   "husky": {
@@ -47,6 +52,7 @@
     }
   },
   "dependencies": {
+    "firebase-tools": "^7.12.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }
